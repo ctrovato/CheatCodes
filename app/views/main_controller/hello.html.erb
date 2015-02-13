@@ -1,0 +1,22 @@
+<h1>MainController#index</h1>
+<p>INDEX  :) </p>
+
+<% target = "World"  %>
+<%= "Hello #{target}"  %>
+
+
+<%  @array.each do |n| %>
+<%= n %><br/>
+<%end%>
+
+<%= link_to('Index Page 1', {:action => 'index'})%>
+<br/>
+
+ID: <%= params[:id] %><br />
+ID: <%= @id %><br />
+Next Page: <%= @page +1 %>
+
+<hr>
+
+<%= params.inspect %>
+
