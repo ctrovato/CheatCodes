@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root 'main_controller#index'
   #get 'main_controller/index'
-  match ':controller(/:action(/:id))', :via => :get
+  match ':controller(/:action(/:id))', :via => [:get, :post]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
