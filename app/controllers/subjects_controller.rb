@@ -21,7 +21,7 @@ class SubjectsController < ApplicationController
      #Save the Object
      if @subject.save
      #If save succeeds, rediect to the index action
-     redirect_to(:action => 'show', :id => @subject.id)
+     redirect_to(:action => 'index',  )
      else
      #If save fails redisplay the form so the user can fix the error
      render('new')
@@ -40,7 +40,7 @@ class SubjectsController < ApplicationController
      #Update the object
      if @subject.update_attributes (subject_params)
      #If save succeeds, rediect to the index action
-     redirect_to(:action => 'index')
+     redirect_to(:action => 'show', :id => @subject.id)
      else
      #If save fails redisplay the form so the user can fix the error
      render('new')
